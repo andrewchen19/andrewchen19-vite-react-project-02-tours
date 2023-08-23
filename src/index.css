@@ -249,7 +249,7 @@ ul {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: var(--grey-100);
+  background: var(--primary-700);
   margin: -4px 0 0 -4px;
 }
 
@@ -319,26 +319,32 @@ ul {
   }
 }
 
-/* title */
-.title {
-  padding: 1rem 0;
-  text-align: center;
-}
-
 /* ============= PROJECT CSS =============== */
 
 body {
-  background: var(--grey-800);
+  background: var(--grey-200);
 }
 
 main {
-  background: var(--grey-100);
   width: 90vw;
   max-width: var(--max-width);
   /* 水平置中 */
   margin: 5rem auto;
 }
 
+/* title */
+.title {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.title h2 {
+  color: var(--primary-700);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* tours */
 .tours {
   padding-bottom: 1rem;
   display: grid;
@@ -356,6 +362,7 @@ main {
 
 .single-tour:hover {
   box-shadow: var(--shadow-3);
+  transform: scale(1.03);
 }
 
 .tour-price {
